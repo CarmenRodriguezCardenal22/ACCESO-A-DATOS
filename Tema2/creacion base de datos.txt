@@ -1,0 +1,27 @@
+create database 1dam;
+
+use 1dam
+
+create table if not exists EdificiosHistoricos(
+nombre varchar(50) PRIMARY KEY,
+ubicacion varchar(50),
+añoContruccion varchar(50),
+estiloArquitectonico varchar(50));
+
+insert into EdificiosHistoricos
+(nombre,ubicacion,añoContruccion,estiloArquitectonico) 
+values
+('Giralda','Sevilla','05/03/1979','Barroco'),
+('Estatua de la libertad','New York','14/10/1886','Clásica'),
+('Torre Eiffel','Paris','20/09/1650','Renacentista'),
+('Torre de Pisa','Roma','15/12/1214','Gótica'),
+('Taj Mahal','India','06/06/1990','Moderna');
+
+set global validate_password.length=5;
+create user 'usuario'@'localhost' identified by 'usuario';
+grant all privileges on 1dam.* to 'usuario'@'localhost';
+flush privileges;
+
+
+mysql -u usuario -pusuario
+
