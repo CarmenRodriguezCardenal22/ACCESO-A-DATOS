@@ -7,15 +7,16 @@ try:
         host='localhost',
         user='usuario',
         password='usuario',
-        database='1dam'
+        db='1dam'
     )
     cursor = conexion.cursor()
     for i in range (0,10000):
         cursor.execute("select * from EdificiosHistoricos")
+        cursor.fetchall()
 except Error as e:
     print(f"Error de conexión: {e}")
 finally:
-    if conexion.is_connected():
+    if conexion is not None:
         conexion.close()
         print("Conexión cerrada")
 end_time = time.time()

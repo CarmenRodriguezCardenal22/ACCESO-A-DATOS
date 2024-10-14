@@ -17,6 +17,24 @@ values
 ('Torre de Pisa','Roma','15/12/1214','Gótica'),
 ('Taj Mahal','India','06/06/1990','Moderna');
 
+
+create table if not exists Autores(
+nombre varchar(50) PRIMARY KEY,
+fechaNacimiento varchar(50),
+edificio varchar(50),
+FOREIGN KEY (edificio) REFERENCES EdificiosHistoricos(nombre));
+
+insert into Autores
+(nombre,fechaNacimiento,edificio) 
+values
+('Hernan Ruiz','01/02/1959','Giralda'),
+('Auguste Bartholdi','09/06/1856','Estatua de la libertad'),
+('Gustave Eiffel','25/01/1625','Torre Eiffel'),
+('Bonanno Pisano','10/10/1297','Torre de Pisa'),
+('Ustad Ahmad Lahori','30/11/1940','Taj Mahal'),
+('Sebastián Van der Borcht','05/05/1920','Torre del Oro');
+
+
 set global validate_password.length=5;
 create user 'usuario'@'localhost' identified by 'usuario';
 grant all privileges on 1dam.* to 'usuario'@'localhost';
