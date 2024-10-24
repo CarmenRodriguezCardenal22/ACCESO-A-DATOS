@@ -1,4 +1,5 @@
 from peewee import MySQLDatabase
+from peewee import IntegrityError
 # Configurar la base de datos
 db = MySQLDatabase(
     '1dam', # Nombre de la base de datos
@@ -47,8 +48,13 @@ for edificio in edificios:
     
 print("\nEdificiosHistoricos 'Torre Eiffel' y 'Renacentista' eliminada.")
 # Eliminar un edificio específico por nombre
-torreEiffel = EdificiosHistoricos.get((EdificiosHistoricos.nombre == 'Torre Eiffel') & (EdificiosHistoricos.estiloArquitectonico == 'Renacentista'))
-torreEiffel.delete_instance()
+try:
+    # Iniciar una transacción utilizando db.atomic()
+    with db.atomic():
+        torreEiffel = EdificiosHistoricos.get((EdificiosHistoricos.nombre == 'Torre Eiffel') & (EdificiosHistoricos.estiloArquitectonico == 'Renacentista'))
+        torreEiffel.delete_instance()
+except IntegrityError as e:
+    print(f"Error al insertar herramientas: {e}")
 # Recupera todos los registros después de la eliminación
 edificios = EdificiosHistoricos.select()
 for edificio in edificios:
@@ -64,7 +70,12 @@ for edificio in edificios:
     print(f"Nombre: {edificio.nombre}, Ubicacion: {edificio.ubicacion}, AñoConstruccion: {edificio.añoConstruccion}, EstiloArquitectonico: {edificio.estiloArquitectonico}")
     
 # Eliminar todos los edificios con el nombre 'Torre Eiffel' y estilo 'Renacentista'
-EdificiosHistoricos.delete().where(EdificiosHistoricos.estiloArquitectonico == 'Barroco').execute()
+try:
+    # Iniciar una transacción utilizando db.atomic()
+    with db.atomic():
+        EdificiosHistoricos.delete().where(EdificiosHistoricos.estiloArquitectonico == 'Barroco').execute()
+except IntegrityError as e:
+    print(f"Error al insertar herramientas: {e}")
 print("\nEdificiosHistoricos del estilo 'Barroco' eliminados.")
 # Recupera todos los registros después de la eliminación
 edificios = EdificiosHistoricos.select()
