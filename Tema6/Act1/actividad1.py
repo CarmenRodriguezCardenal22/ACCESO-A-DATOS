@@ -12,8 +12,9 @@ logging.basicConfig(
         logging.FileHandler("log_datos.log"), # Guardar logs en un archivo
     ]
 )
+
 class DataManager:
-    def __init__(self, ruta_archivo, tipo_archivo='json'):
+    def __init__(self, ruta_archivo, tipo_archivo):
         self.ruta_archivo = ruta_archivo
         self.tipo_archivo = tipo_archivo
         self.version = 1
@@ -97,3 +98,19 @@ class DataManager:
         if nuevo_tipo:
             self.tipo_archivo = nuevo_tipo
         logging.info(f"Configuración actualizada. Nueva ruta del archivo: {self.ruta_archivo}")
+        
+        
+edificios= [
+    {"nombre": "Giralda", "ubicacion": "España", "añoConstruccion": "16/06/1650", "estiloArquitectonico": "Gótico"},
+    {"nombre": "Coliseo Romano", "ubicacion": "Roma", "añoConstruccion": "24/01/1520", "estiloArquitectonico": "Renacentista"},
+    {"nombre": "Muro de Berlín", "ubicacion": "Alemania", "añoConstruccion": "01/10/1760", "estiloArquitectonico": "Barroco"}
+]
+gestor=DataManager("edificios.json", tipo_archivo="json")
+gestor.iniciar_transaccion()
+for edificio in edificios:
+    gestor.escribir_dato(edificio)
+gestor.confirmar_transaccion()
+
+gestor.actualizar_configuracion("edificios.csv", nuevo_tipo="csv")
+gestor.iniciar_transaccion()
+gestor.confirmar_transaccion()

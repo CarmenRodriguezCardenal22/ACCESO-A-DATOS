@@ -1,0 +1,9 @@
+2024-11-21 09:32:43,517 - INFO - Transacción iniciada.
+2024-11-21 09:32:43,517 - INFO - Dato agregado: {'nombre': 'Giralda', 'ubicacion': 'España', 'añoConstruccion': '16/06/1650', 'estiloArquitectonico': 'Gótico'}
+2024-11-21 09:32:43,517 - INFO - Dato agregado: {'nombre': 'Coliseo Romano', 'ubicacion': 'Roma', 'añoConstruccion': '24/01/1520', 'estiloArquitectonico': 'Renacentista'}
+2024-11-21 09:32:43,517 - INFO - Dato agregado: {'nombre': 'Muro de Berlín', 'ubicacion': 'Alemania', 'añoConstruccion': '01/10/1760', 'estiloArquitectonico': 'Barroco'}
+2024-11-21 09:32:43,518 - INFO - Transacción confirmada y cambios guardados.
+2024-11-21 09:32:43,518 - INFO - Configuración actualizada. Nueva ruta del archivo: edificios.csv
+2024-11-21 09:32:43,518 - INFO - Transacción iniciada.
+2024-11-21 09:32:43,518 - INFO - Archivo CSV guardado. Versión actual:3
+2024-11-21 09:32:43,518 - INFO - Transacción confirmada y cambios guardados.

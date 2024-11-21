@@ -1,0 +1,11 @@
+2024-11-21 10:11:43,474 - INFO - Conexión exitosa a la base de datos.
+2024-11-21 10:11:43,474 - ERROR - Error al insertar el edificio 'Cristo Redentor': Not all parameters were used in the SQL statement
+2024-11-21 10:11:43,475 - INFO - Edificios recuperados:
+2024-11-21 10:11:43,475 - INFO - {'id': 3, 'nombre': 'Taj Majal', 'ubicacion': 'India', 'añoConstruccion': '06/06/1990', 'estiloArquitectonico': 'Moderno'}
+2024-11-21 10:11:43,475 - INFO - {'id': 4, 'nombre': 'Torre de Pisa', 'ubicacion': 'Roma', 'añoConstruccion': '15/12/1214', 'estiloArquitectonico': 'Renacentista'}
+2024-11-21 10:11:43,476 - INFO - Edificio con ID 1 actualizado exitosamente.
+2024-11-21 10:11:43,476 - INFO - Edificio con ID 1 eliminado exitosamente.
+2024-11-21 10:11:43,477 - INFO - Transacción iniciada.
+2024-11-21 10:11:43,477 - ERROR - Error al insertar el edificio 'Piramides': Not all parameters were used in the SQL statement
+2024-11-21 10:11:43,477 - INFO - Transacción revertida.
+2024-11-21 10:11:43,478 - INFO - Conexión cerrada.

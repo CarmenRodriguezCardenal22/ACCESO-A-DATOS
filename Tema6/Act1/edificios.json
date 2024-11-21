@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Giralda",
+        "ubicacion": "Espa\u00f1a",
+        "a\u00f1oConstruccion": "16/06/1650",
+        "estiloArquitectonico": "G\u00f3tico"
+    },
+    {
+        "nombre": "Coliseo Romano",
+        "ubicacion": "Roma",
+        "a\u00f1oConstruccion": "24/01/1520",
+        "estiloArquitectonico": "Renacentista"
+    },
+    {
+        "nombre": "Muro de Berl\u00edn",
+        "ubicacion": "Alemania",
+        "a\u00f1oConstruccion": "01/10/1760",
+        "estiloArquitectonico": "Barroco"
+    }
+]
