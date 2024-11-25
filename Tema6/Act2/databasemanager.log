@@ -1,11 +1,16 @@
-2024-11-21 10:11:43,474 - INFO - Conexión exitosa a la base de datos.
-2024-11-21 10:11:43,474 - ERROR - Error al insertar el edificio 'Cristo Redentor': Not all parameters were used in the SQL statement
-2024-11-21 10:11:43,475 - INFO - Edificios recuperados:
-2024-11-21 10:11:43,475 - INFO - {'id': 3, 'nombre': 'Taj Majal', 'ubicacion': 'India', 'añoConstruccion': '06/06/1990', 'estiloArquitectonico': 'Moderno'}
-2024-11-21 10:11:43,475 - INFO - {'id': 4, 'nombre': 'Torre de Pisa', 'ubicacion': 'Roma', 'añoConstruccion': '15/12/1214', 'estiloArquitectonico': 'Renacentista'}
-2024-11-21 10:11:43,476 - INFO - Edificio con ID 1 actualizado exitosamente.
-2024-11-21 10:11:43,476 - INFO - Edificio con ID 1 eliminado exitosamente.
-2024-11-21 10:11:43,477 - INFO - Transacción iniciada.
-2024-11-21 10:11:43,477 - ERROR - Error al insertar el edificio 'Piramides': Not all parameters were used in the SQL statement
-2024-11-21 10:11:43,477 - INFO - Transacción revertida.
-2024-11-21 10:11:43,478 - INFO - Conexión cerrada.
+2024-11-25 14:15:01,798 - INFO - Conexión exitosa a la base de datos.
+2024-11-25 14:15:01,799 - INFO - Edificio 'Cristo Redentor' insertado exitosamente.
+2024-11-25 14:15:01,802 - INFO - Transacción confirmada.
+2024-11-25 14:15:01,803 - INFO - Edificios recuperados:
+2024-11-25 14:15:01,803 - INFO - {'id': 3, 'nombre': 'Taj Majal', 'ubicacion': 'India', 'añoConstruccion': '06/06/1990', 'estiloArquitectonico': 'Moderno'}
+2024-11-25 14:15:01,804 - INFO - {'id': 4, 'nombre': 'Torre de Pisa', 'ubicacion': 'Roma', 'añoConstruccion': '15/12/1214', 'estiloArquitectonico': 'Renacentista'}
+2024-11-25 14:15:01,804 - INFO - {'id': 21, 'nombre': 'Cristo Redentor', 'ubicacion': 'Rio de Janeiro', 'añoConstruccion': '1931', 'estiloArquitectonico': 'Renacentista'}
+2024-11-25 14:15:01,807 - INFO - Edificio actualizado exitosamente.
+2024-11-25 14:15:01,812 - INFO - Edificio eliminado exitosamente.
+2024-11-25 14:15:01,812 - INFO - Transacción iniciada.
+2024-11-25 14:15:01,813 - INFO - Edificio 'Pirámides' insertado exitosamente.
+2024-11-25 14:15:01,814 - INFO - Transacción revertida.
+2024-11-25 14:15:01,815 - INFO - Edificios recuperados:
+2024-11-25 14:15:01,815 - INFO - {'id': 3, 'nombre': 'Taj Majal', 'ubicacion': 'India', 'añoConstruccion': '06/06/1990', 'estiloArquitectonico': 'Moderno'}
+2024-11-25 14:15:01,816 - INFO - {'id': 21, 'nombre': 'Cristo Redentor', 'ubicacion': 'Rio de Janeiro', 'añoConstruccion': '1931', 'estiloArquitectonico': 'Gótico'}
+2024-11-25 14:15:01,817 - INFO - Conexión cerrada.
