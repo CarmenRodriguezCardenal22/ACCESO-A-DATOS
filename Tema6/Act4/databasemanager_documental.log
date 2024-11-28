@@ -8,3 +8,6 @@
 2024-11-25 14:39:05,368 - ERROR - Error al actualizar el documento: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 2024-11-25 14:39:05,369 - INFO - Transacción confirmada.
 2024-11-25 14:39:05,370 - INFO - Transacción iniciada.
+2024-11-25 14:39:35,441 - ERROR - Error al eliminar el documento: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2024-11-25 14:39:35,442 - INFO - Transacción confirmada.
+2024-11-25 14:39:50,447 - INFO - Conexión a MongoDB cerrada.
