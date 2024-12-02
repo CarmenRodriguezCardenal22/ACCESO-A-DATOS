@@ -1,13 +1,19 @@
-2024-11-25 14:37:05,069 - INFO - Conectado a MongoDB: 1dam.edificios
-2024-11-25 14:37:05,070 - INFO - Transacción iniciada.
-2024-11-25 14:37:35,143 - ERROR - Error al insertar el documento: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
-2024-11-25 14:38:05,218 - ERROR - Error al insertar el documento: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
-2024-11-25 14:38:05,218 - INFO - Transacción confirmada.
-2024-11-25 14:38:35,294 - ERROR - Error al leer los documentos: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
-2024-11-25 14:38:35,295 - INFO - Transacción iniciada.
-2024-11-25 14:39:05,368 - ERROR - Error al actualizar el documento: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
-2024-11-25 14:39:05,369 - INFO - Transacción confirmada.
-2024-11-25 14:39:05,370 - INFO - Transacción iniciada.
-2024-11-25 14:39:35,441 - ERROR - Error al eliminar el documento: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67447d81c7cbf1ac0324008a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
-2024-11-25 14:39:35,442 - INFO - Transacción confirmada.
-2024-11-25 14:39:50,447 - INFO - Conexión a MongoDB cerrada.
+2024-12-02 12:36:02,076 - INFO - Conectado a MongoDB: 1dam.edificios
+2024-12-02 12:36:02,076 - INFO - Transacción iniciada.
+2024-12-02 12:36:02,078 - INFO - Documento insertado con ID: 674d9ba2401e871572d0c527
+2024-12-02 12:36:02,078 - INFO - Documento insertado con ID: 674d9ba2401e871572d0c528
+2024-12-02 12:36:02,078 - INFO - Transacción confirmada.
+2024-12-02 12:36:02,079 - INFO - Documentos recuperados: 3
+2024-12-02 12:36:02,079 - INFO - {'_id': ObjectId('674d9b3a3028e489b917a327'), 'nombre': 'Louvre', 'ubicacion': 'Francia', 'añoConstruccion': '01/12/1300', 'estiloArquitectonico': 'Moderno'}
+2024-12-02 12:36:02,079 - INFO - {'_id': ObjectId('674d9ba2401e871572d0c527'), 'nombre': 'Louvre', 'ubicacion': 'Francia', 'añoConstruccion': '12/01/1100', 'estiloArquitectonico': 'Moderno'}
+2024-12-02 12:36:02,079 - INFO - {'_id': ObjectId('674d9ba2401e871572d0c528'), 'nombre': 'Big Ben', 'ubicacion': 'Inglaterra', 'añoConstruccion': '30/09/1200', 'estiloArquitectonico': 'Contemporáneo'}
+2024-12-02 12:36:02,079 - INFO - Transacción iniciada.
+2024-12-02 12:36:02,079 - WARNING - No se encontró documento para actualizar: {'nombre': 'Louvre'}
+2024-12-02 12:36:02,080 - INFO - Transacción confirmada.
+2024-12-02 12:36:02,080 - INFO - Transacción iniciada.
+2024-12-02 12:36:02,080 - INFO - Documento eliminado: {'nombre': 'Big Ben'}
+2024-12-02 12:36:02,080 - INFO - Transacción confirmada.
+2024-12-02 12:36:02,081 - INFO - Documentos recuperados: 2
+2024-12-02 12:36:02,081 - INFO - {'_id': ObjectId('674d9b3a3028e489b917a327'), 'nombre': 'Louvre', 'ubicacion': 'Francia', 'añoConstruccion': '01/12/1300', 'estiloArquitectonico': 'Moderno'}
+2024-12-02 12:36:02,081 - INFO - {'_id': ObjectId('674d9ba2401e871572d0c527'), 'nombre': 'Louvre', 'ubicacion': 'Francia', 'añoConstruccion': '12/01/1100', 'estiloArquitectonico': 'Moderno'}
+2024-12-02 12:36:02,082 - INFO - Conexión a MongoDB cerrada.

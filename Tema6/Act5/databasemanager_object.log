@@ -1,0 +1,72 @@
+2024-12-02 13:16:56,660 - INFO - Conexión establecida con ZODB.
+2024-12-02 13:16:56,660 - INFO - Transacción iniciada.
+2024-12-02 13:16:56,660 - INFO - Edificio con ID 1 creado exitosamente.
+2024-12-02 13:16:56,660 - INFO - Edificio con ID 2 creado exitosamente.
+2024-12-02 13:16:56,660 - INFO - Edificio con ID 3 creado exitosamente.
+2024-12-02 13:16:56,660 - INFO - Transacción confirmada.
+2024-12-02 13:16:56,660 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 12/11/1889, Estilo Arquitectónico: Arquitectura de Hierro
+2024-12-02 13:16:56,660 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:16:56,660 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:16:56,660 - ERROR - Error al crear el edificio con ID 3: Ya existe un edificio con ID 3.
+2024-12-02 13:16:56,660 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 12/11/1889, Estilo Arquitectónico: Arquitectura de Hierro
+2024-12-02 13:16:56,660 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:16:56,660 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:16:56,661 - INFO - Transacción iniciada.
+2024-12-02 13:16:56,661 - INFO - Edificio con ID 1 actualizado exitosamente.
+2024-12-02 13:16:56,661 - INFO - Transacción confirmada.
+2024-12-02 13:16:56,661 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 11/12/1889, Estilo Arquitectónico: Arquitectura Moderna
+2024-12-02 13:16:56,661 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:16:56,661 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:16:56,661 - ERROR - Error al eliminar el edificio con ID 7: No existe un edificio con ID 7.
+2024-12-02 13:16:56,661 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 11/12/1889, Estilo Arquitectónico: Arquitectura Moderna
+2024-12-02 13:16:56,661 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:16:56,661 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:16:56,661 - INFO - Conexión a ZODB cerrada.
+2024-12-02 13:20:00,803 - INFO - Conexión establecida con ZODB.
+2024-12-02 13:20:00,803 - INFO - Transacción iniciada.
+2024-12-02 13:20:00,803 - INFO - Edificio con ID 1 creado exitosamente.
+2024-12-02 13:20:00,804 - INFO - Edificio con ID 2 creado exitosamente.
+2024-12-02 13:20:00,804 - INFO - Edificio con ID 3 creado exitosamente.
+2024-12-02 13:20:00,804 - INFO - Transacción confirmada.
+2024-12-02 13:20:00,804 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 12/11/1889, Estilo Arquitectónico: Arquitectura de Hierro
+2024-12-02 13:20:00,804 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:20:00,804 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:20:00,804 - ERROR - Error al crear el edificio con ID 3: Ya existe un edificio con ID 3.
+2024-12-02 13:20:00,804 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 12/11/1889, Estilo Arquitectónico: Arquitectura de Hierro
+2024-12-02 13:20:00,804 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:20:00,804 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:20:00,804 - INFO - Transacción iniciada.
+2024-12-02 13:20:00,804 - INFO - Edificio con ID 1 actualizado exitosamente.
+2024-12-02 13:20:00,804 - INFO - Transacción confirmada.
+2024-12-02 13:20:00,804 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 11/12/1889, Estilo Arquitectónico: Arquitectura Moderna
+2024-12-02 13:20:00,804 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:20:00,804 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:20:00,804 - ERROR - Error al eliminar el edificio con ID 7: No existe un edificio con ID 7.
+2024-12-02 13:20:00,804 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 11/12/1889, Estilo Arquitectónico: Arquitectura Moderna
+2024-12-02 13:20:00,804 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:20:00,804 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:20:00,805 - INFO - Conexión a ZODB cerrada.
+2024-12-02 13:21:10,702 - INFO - Conexión establecida con ZODB.
+2024-12-02 13:21:10,703 - INFO - Transacción iniciada.
+2024-12-02 13:21:10,703 - INFO - Edificio con ID 1 creado exitosamente.
+2024-12-02 13:21:10,703 - INFO - Edificio con ID 2 creado exitosamente.
+2024-12-02 13:21:10,703 - INFO - Edificio con ID 3 creado exitosamente.
+2024-12-02 13:21:10,703 - INFO - Transacción confirmada.
+2024-12-02 13:21:10,703 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 12/11/1889, Estilo Arquitectónico: Arquitectura de Hierro
+2024-12-02 13:21:10,703 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:21:10,703 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:21:10,703 - ERROR - Error al crear el edificio con ID 3: Ya existe un edificio con ID 3.
+2024-12-02 13:21:10,703 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 12/11/1889, Estilo Arquitectónico: Arquitectura de Hierro
+2024-12-02 13:21:10,703 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:21:10,703 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:21:10,703 - INFO - Transacción iniciada.
+2024-12-02 13:21:10,703 - INFO - Edificio con ID 1 actualizado exitosamente.
+2024-12-02 13:21:10,703 - INFO - Transacción confirmada.
+2024-12-02 13:21:10,704 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 11/12/1889, Estilo Arquitectónico: Arquitectura Moderna
+2024-12-02 13:21:10,704 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:21:10,704 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:21:10,704 - ERROR - Error al eliminar el edificio con ID 7: No existe un edificio con ID 7.
+2024-12-02 13:21:10,704 - INFO - ID: 1, Nombre: Torre Eiffel, Ubicación: París, Año de Construcción: 11/12/1889, Estilo Arquitectónico: Arquitectura Moderna
+2024-12-02 13:21:10,704 - INFO - ID: 2, Nombre: Empire State, Ubicación: Nueva York, Año de Construcción: 22/05/1931, Estilo Arquitectónico: Art Deco
+2024-12-02 13:21:10,704 - INFO - ID: 3, Nombre: Louvre, Ubicación: Paris, Año de Construcción: 01/06/1520, Estilo Arquitectónico: Moderno
+2024-12-02 13:21:10,704 - INFO - Conexión a ZODB cerrada.
