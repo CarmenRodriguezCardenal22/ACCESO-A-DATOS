@@ -12,7 +12,6 @@ logging.basicConfig(
         logging.StreamHandler(),  # Logs también en consola
     ],
 )
-
 class Edificio(Persistent):
     """Clase que representa un edificio."""
     def __init__(self, nombre, ubicacion, año_construccion, estilo_arquitectonico):
@@ -20,8 +19,6 @@ class Edificio(Persistent):
         self.ubicacion = ubicacion
         self.año_construccion = año_construccion
         self.estilo_arquitectonico = estilo_arquitectonico
-
-
 class DatabaseManagerObject:
     """Componente para gestionar bases de datos orientadas a objetos con ZODB."""
     def __init__(self, filepath="edificios.fs"):
@@ -30,7 +27,6 @@ class DatabaseManagerObject:
         self.connection = None
         self.root = None
         self.transaccion_iniciada = False
-
     def conectar(self):
         """Conecta a la base de datos ZODB."""
         try:
@@ -44,7 +40,6 @@ class DatabaseManagerObject:
             logging.info("Conexión establecida con ZODB.")
         except Exception as e:
             logging.error(f"Error al conectar a ZODB: {e}")
-
     def desconectar(self):
         """Cierra la conexión a la base de datos."""
         try:
@@ -54,7 +49,6 @@ class DatabaseManagerObject:
             logging.info("Conexión a ZODB cerrada.")
         except Exception as e:
             logging.error(f"Error al cerrar la conexión a ZODB: {e}")
-
     def iniciar_transaccion(self):
         """Inicia una transacción."""
         try:
@@ -63,7 +57,6 @@ class DatabaseManagerObject:
             logging.info("Transacción iniciada.")
         except Exception as e:
             logging.error(f"Error al iniciar la transacción: {e}")
-
     def confirmar_transaccion(self):
         """Confirma la transacción."""
         if self.transaccion_iniciada:
@@ -73,7 +66,6 @@ class DatabaseManagerObject:
                 logging.info("Transacción confirmada.")
             except Exception as e:
                 logging.error(f"Error al confirmar la transacción: {e}")
-
     def revertir_transaccion(self):
         """Revierte la transacción."""
         if self.transaccion_iniciada:
@@ -83,7 +75,6 @@ class DatabaseManagerObject:
                 logging.info("Transacción revertida.")
             except Exception as e:
                 logging.error(f"Error al revertir la transacción: {e}")
-
     def crear_edificio(self, id, nombre, ubicacion, año_construccion, estilo_arquitectonico):
         """Crea y almacena un nuevo edificio."""
         try:
@@ -93,7 +84,7 @@ class DatabaseManagerObject:
             logging.info(f"Edificio con ID {id} creado exitosamente.")
         except Exception as e:
             logging.error(f"Error al crear el edificio con ID {id}: {e}")
-
+            raise ValueError(f"Ya existe un edificio con ID {id}.")
     def leer_edificios(self):
         """Lee y muestra todos los edificios almacenados."""
         try:
@@ -106,7 +97,6 @@ class DatabaseManagerObject:
             return edificios
         except Exception as e:
             logging.error(f"Error al leer los edificios: {e}")
-
     def actualizar_edificio(self, id, nombre, ubicacion, año_construccion, estilo_arquitectonico):
         """Actualiza los atributos de un edificio."""
         try:
@@ -120,7 +110,6 @@ class DatabaseManagerObject:
             logging.info(f"Edificio con ID {id} actualizado exitosamente.")
         except Exception as e:
             logging.error(f"Error al actualizar el edificio con ID {id}: {e}")
-
     def eliminar_edificio(self, id):
         """Elimina un edificio por su ID."""
         try:
@@ -130,7 +119,7 @@ class DatabaseManagerObject:
             logging.info(f"Edificio con ID {id} eliminado exitosamente.")
         except Exception as e:
             logging.error(f"Error al eliminar el edificio con ID {id}: {e}")
-
+            raise ValueError(f"Ya existe un edificio con ID {id}.")
 
 if __name__ == "__main__":
     manager = DatabaseManagerObject()
@@ -142,36 +131,30 @@ if __name__ == "__main__":
     manager.crear_edificio(2, "Empire State", "Nueva York", "22/05/1931", "Art Deco")
     manager.crear_edificio(3, "Louvre", "Paris", "01/06/1520", "Moderno")
     manager.confirmar_transaccion()
-    
     # Leer edificios
     manager.leer_edificios()
-
     # Crear edificio con ID ya insertado 
     try:
+        manager.iniciar_transaccion()
         manager.crear_edificio(3, "Sagrada Familia", "España", "20/02/1230", "Gótico")
+        manager.confirmar_transaccion()
     except Exception as e:
-        logging.error(f"Error general: {e}")
         manager.revertir_transaccion()
-    
     # Leer edificios
     manager.leer_edificios()
-    
     # Actualizar un edificio con transacción
     manager.iniciar_transaccion()
     manager.actualizar_edificio(1, "Torre Eiffel", "París", "11/12/1889", "Arquitectura Moderna")
     manager.confirmar_transaccion()
-    
     # Leer edificios
     manager.leer_edificios()
-    
     # Eliminar un edificio con transacción con ID no registrado
     try:
+        manager.iniciar_transaccion()
         manager.eliminar_edificio(7)
+        manager.confirmar_transaccion()
     except ValueError as e:
-        logging.error(f"Error general: {e}")
         manager.revertir_transaccion()
-        
     # Leer edificios nuevamente
     manager.leer_edificios()
-
     manager.desconectar()
