@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import OrdinalEncoder
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("insurance.csv")
 encoded = OrdinalEncoder()
@@ -27,3 +28,22 @@ print('\nCorrelación de la region con costo de seguro')
 df[['region']] = encoded.fit_transform(df[['region']])
 df[['region']] = df[['region']].astype(int)
 print(df[['charges', 'region']].corr())
+
+
+# Identificacion de valores nulos
+print('\nIdentificación de valores nulos')
+dt = df[['charges','age','bmi','smoker']]
+print(dt.isnull().sum())
+
+# Identificación de valores erroneos
+precio_edad = df.groupby('age')['charges'].mean()
+precio_edad.plot(title='Costo de seguro por edad', figsize=(10,6))
+plt.show()
+
+precio_bmi = df.groupby('bmi')['charges'].mean()
+precio_bmi.plot(title='Costo de seguro por bmi', figsize=(10,6))
+plt.show()
+
+otros_valores = df[df['smoker'].isin[('yes','no')]]
+conteo_otros = otros_valores.shape[0]
+print(f'Valores erroneos: {conteo_otros}')
