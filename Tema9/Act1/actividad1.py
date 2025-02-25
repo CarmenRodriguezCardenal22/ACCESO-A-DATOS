@@ -44,6 +44,30 @@ precio_bmi = df.groupby('bmi')['charges'].mean()
 precio_bmi.plot(title='Costo de seguro por bmi', figsize=(10,6))
 plt.show()
 
-otros_valores = df[df['smoker'].isin[('yes','no')]]
+otros_valores = df[df['smoker'].isin(['yes', 'no'])]
 conteo_otros = otros_valores.shape[0]
-print(f'Valores erroneos: {conteo_otros}')
+print(f'\nValores distintos de yes y no: {conteo_otros}')
+
+#Identificación de outliers
+plt.boxplot(
+    df['age'].dropna(),
+    patch_artist=True,
+    boxprops=dict(facecolor='lightblue', color='blue'),
+    medianprops=dict(color='red'),
+    flierprops=dict(marker='o', markerfacecolor='red', markersize=8),
+)
+plt.title('Boxplot de edad')
+plt.xlabel('Edad')
+plt.show()
+
+plt.boxplot(
+    df['bmi'].dropna(),
+    patch_artist=True,
+    boxprops=dict(facecolor='lightblue', color='blue'),
+    medianprops=dict(color='red'),
+    flierprops=dict(marker='o', markerfacecolor='red', markersize=8),
+)
+plt.title('Boxplot de BMI')
+plt.xlabel('BMI')
+plt.show()
+
